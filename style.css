@@ -1,0 +1,97 @@
+h1 {
+    font-size: 45px;
+    text-align: center;
+    overflow: hidden;
+}
+
+body {
+    background-color: green;
+    overflow: hidden;
+}
+
+#board {
+    border-width: 3px;
+    padding: 25px;
+    width: 450px;
+    height: 450px;
+    margin-left: 32%;
+    display: inline-block;
+}
+#menu1 {
+    border-radius: 25px;
+    background-color: burlywood;
+    padding: 25px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    margin: 8% auto;
+    animation-name: OK;
+    animation-duration: 2s;
+    overflow: hidden;
+}
+
+@keyframes OK {
+    from {margin: 40% auto; opacity: 0;}
+    to {margin: 8% auto; opacity: 100%;}
+}
+
+#alldominos {
+    display: none;
+}
+
+.rotation90 {
+    transform: rotate(90deg);
+}
+
+.rotation180 {
+    transform: rotate(180deg);
+}
+
+.rotation270 {
+    transform: rotate(270deg);
+}
+
+.rotation360 {
+    transform: rotate(360deg);
+}
+
+.normal, {
+    transform: rotate(0deg);
+    border-width: 3px;
+    border-style: none;
+}
+
+#mydiv0, #mydiv1, #mydiv2, #mydiv3, #mydiv4, #mydiv5, #mydiv6, #mydiv7, 
+#mydiv8, #mydiv9, #mydiv10, #mydiv11, #mydiv12, #mydiv13, #mydiv14, #mydiv15, #mydiv16, #mydiv17, #mydiv18, 
+#mydiv19, #mydiv20, #mydiv21, #mydiv22, #mydiv23, #mydiv24, #mydiv25, #mydiv26, #mydiv27 {
+    position: absolute;
+}
+
+#mydivheader00, #mydivheader01, #mydivheader02, #mydivheader03, #mydivheader04, #mydivheader05,
+#mydivheader06, #mydivheader07, #mydivheader08, #mydivheader09, #mydivheader10, #mydivheader11,
+#mydivheader12, #mydivheader13, #mydivheader14, #mydivheader15, #mydivheader16, #mydivheader17,
+#mydivheader18, #mydivheader19, #mydivheader20, #mydivheader21, #mydivheader22, #mydivheader23,
+#mydivheader24, #mydivheader25, #mydivheader26, #mydivheader27 {
+    cursor: move;
+}
+
+.player1 {
+    border-radius: 25px;
+    background-color: red;
+    padding: 25px;
+    width: 520px;
+    height: 100px;
+    margin-left: 25%;
+    display: block;
+}
+
+.player2 {
+    border-radius: 25px;
+    background-color: red;
+    padding: 25px;
+    width: 520px;
+    height: 100px;
+    margin-left: 25%;
+    display: block;
+}
+
